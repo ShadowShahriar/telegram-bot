@@ -1,11 +1,11 @@
-name: Send Reminder
+name: Send Quote
 
 on:
     schedule:
-        - cron: '0 12 * * 4'
+        - cron: '0 13 * * 4'
 
 jobs:
-    send_reminder:
+    send_quote:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -15,8 +15,8 @@ jobs:
                   node-version: 17
             - name: npm install
               run: npm ci
-            - name: send reminder
-              run: node send-reminder.js
+            - name: send quote
+              run: node send-quote.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}
