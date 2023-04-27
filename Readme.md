@@ -2,7 +2,7 @@
 
 ## Overview
 
-> This repository demonstrates an implementation of a telegram bot that can occasionally send a user song, messages, photos, YouTube videos, and reminders. It can even send birthday wishes to the user.
+> This repository demonstrates an implementation of a Telegram bot that can occasionally send a user song, messages, photos, YouTube videos, and reminders. It can even send birthday wishes to the user.
 
 ## Back Story
 
@@ -21,6 +21,24 @@ Here we are using [**Telegraf**][1] to send text messages and photos to the user
 This telegram bot can send a random video from a specific YouTube playlist using the [**YouTube Data API**][2]. With the [**Tenor API**][3], it can also send a `GIF` animation along with the reminder message. Finally, using the [**Unsplash API**][4], it can send a random photo with a description and author information.
 
 The message tasks are scheduled using `cron` and executed via GitHub Actions. You can see [**all the workflows here**][5].
+
+## Notes on the Cron schedule
+
+GitHub actions use **UTC** time. I live in Dhaka, Bangladesh, and my time zone is **UTC +06:00**. That means my clock is 6 hours ahead of GitHub action's time zone. And I have to subtract 6 hours from my time zone to get the **UTC** time.
+
+Here are the cron schedules of all workflows:
+
+| Workflow file             | Cron expression | Description                                                       |
+| ------------------------- | --------------- | ----------------------------------------------------------------- |
+| send-quote.yml            | 0 3 \* \* 0     | At 9 AM (Bangladesh Standard Time) on Sunday                      |
+| send-photo.yml            | 0 10 \* \* 2    | At 4 PM (Bangladesh Standard Time) on Tuesday                     |
+| send-cheerful-comment.yml | 0 5 \* \* 3     | At 11 AM (Bangladesh Standard Time) on Wednesday                  |
+| send-reminder.yml         | 0 11 \* \* 4    | At 5 PM (Bangladesh Standard Time) on Thursday                    |
+| send-chore-reminder.yml   | 0 2 \* \* 5     | At 8 AM (Bangladesh Standard Time) on Friday                      |
+| send-video.yml            | 0 15 \* \* 6    | At 9 PM (Bangladesh Standard Time) on Saturday                    |
+| send-birthday-wish.yml    | 0 18 25 10 \*   | At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October |
+
+If you need help, you can always use [**crontab guru**][10].
 
 ## Demo
 
@@ -89,7 +107,7 @@ The message tasks are scheduled using `cron` and executed via GitHub Actions. Yo
     npm run test-general
     ```
 
-    Now the bot should start sending messages, photos, and videos to your telegram account.
+    Now the bot should start sending messages, photos, and videos to your Telegram account.
 
 ## License
 
@@ -104,3 +122,4 @@ The source code is licensed under [**MIT**][9].
 [7]: https://t.me/BotFather
 [8]: https://console.cloud.google.com/
 [9]: https://github.com/ShadowShahriar/telegram-bot/blob/main/LICENSE
+[10]: https://crontab.guru/
