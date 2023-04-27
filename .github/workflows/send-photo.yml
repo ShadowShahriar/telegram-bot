@@ -2,7 +2,7 @@ name: Send Photo
 
 on:
     schedule:
-        - cron: '0 14 * * 4'
+        - cron: '0 10 * * 2' # At 4 PM (Bangladesh Standard Time) on Tuesday
 
 jobs:
     send_photo:

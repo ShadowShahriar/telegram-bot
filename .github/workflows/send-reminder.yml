@@ -1,11 +1,11 @@
-name: Send Reminder
+name: Send Writing Reminder
 
 on:
     schedule:
-        - cron: '0 12 * * 4'
+        - cron: '0 11 * * 4' # At 5 PM (Bangladesh Standard Time) on Thursday
 
 jobs:
-    send_reminder:
+    send_writing_reminder:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -15,7 +15,7 @@ jobs:
                   node-version: 17
             - name: npm install
               run: npm ci
-            - name: send reminder
+            - name: send writing reminder
               run: node send-reminder.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}

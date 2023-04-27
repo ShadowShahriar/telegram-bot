@@ -2,7 +2,7 @@ name: Send Video
 
 on:
     schedule:
-        - cron: '0 15 * * 4'
+        - cron: '0 15 * * 6' # At 9 PM (Bangladesh Standard Time) on Saturday
 
 jobs:
     send_video:

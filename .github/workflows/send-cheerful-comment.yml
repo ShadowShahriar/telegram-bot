@@ -1,11 +1,11 @@
-name: Send Quote
+name: Send Cheerful Comment
 
 on:
     schedule:
-        - cron: '0 3 * * 0' # At 9 AM (Bangladesh Standard Time) on Sunday
+        - cron: '0 5 * * 3' # At 11 AM (Bangladesh Standard Time) on Wednesday
 
 jobs:
-    send_quote:
+    send_cheerful_comment:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -15,8 +15,8 @@ jobs:
                   node-version: 17
             - name: npm install
               run: npm ci
-            - name: send quote
-              run: node send-quote.js
+            - name: send cheerful comment
+              run: node send-cheerful-comment.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}

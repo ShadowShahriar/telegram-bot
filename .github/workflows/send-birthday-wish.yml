@@ -1,11 +1,11 @@
-name: Send Quote
+name: Send Birthday Wish
 
 on:
     schedule:
-        - cron: '0 3 * * 0' # At 9 AM (Bangladesh Standard Time) on Sunday
+        - cron: '0 18 25 10 *' # At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October.
 
 jobs:
-    send_quote:
+    send_birthday_wish:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -15,8 +15,8 @@ jobs:
                   node-version: 17
             - name: npm install
               run: npm ci
-            - name: send quote
-              run: node send-quote.js
+            - name: send birthday wish
+              run: node send-birthday-wish.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}
