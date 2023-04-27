@@ -5,8 +5,6 @@ dotenv.config()
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
 const sendMessage = async str => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, str)
-const sendMD = async str =>
-	await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, str, { parse_mode: 'MarkdownV2' })
 const sendVideo = async id => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, `https://youtu.be/${id}`)
 const sendPhoto = async url => await bot.telegram.sendPhoto(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
 const sendGIF = async url => await bot.telegram.sendAnimation(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
