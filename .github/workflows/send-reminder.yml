@@ -1,0 +1,25 @@
+name: Test
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: setup node
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 17
+            - name: npm install
+              run: npm ci
+            - name: test
+              run: npm run test
+              env:
+                  YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+                  YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}
+                  TENOR_API_KEY: ${{ secrets.TENOR_API_KEY }}
+                  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+                  TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
+                  UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}

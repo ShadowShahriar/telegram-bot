@@ -1,0 +1,33 @@
+{
+	"name": "telegram-bot",
+	"version": "1.0.0",
+	"description": "A telegram bot that ocassionally sends me songs, messages, and reminders.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "node send-reminder.js && node send-quote.js && node send-photo.js && node send-video.js"
+	},
+	"author": "S. Shahriar <shadowshahriar@gmail.com>",
+	"keywords": [
+		"nodejs",
+		"telegraf",
+		"youtube-api",
+		"tenor-api",
+		"telegram-bot",
+		"github-actions"
+	],
+	"prettier": {
+		"printWidth": 120,
+		"arrowParens": "avoid",
+		"semi": false,
+		"singleQuote": true,
+		"useTabs": true,
+		"tabWidth": 4
+	},
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"node-fetch": "^3.3.1",
+		"telegraf": "^4.12.2"
+	}
+}
