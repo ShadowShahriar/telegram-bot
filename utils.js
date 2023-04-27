@@ -61,7 +61,6 @@ async function getRandomQuote() {
 
 export {
 	sendMessage,
-	sendMD,
 	sendRandomMessage,
 	sendPhoto,
 	sendVideo,
