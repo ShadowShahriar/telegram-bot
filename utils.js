@@ -4,11 +4,26 @@ import { Telegraf, Input } from 'telegraf'
 dotenv.config()
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
-const sendMessage = async str => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, str)
+const sendMessage = async str => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, collapseWhiteSpace(str))
 const sendVideo = async id => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, `https://youtu.be/${id}`)
 const sendPhoto = async url => await bot.telegram.sendPhoto(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
 const sendGIF = async url => await bot.telegram.sendAnimation(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
 const random = array => array[Math.round(Math.random() * (array.length - 1))]
+const collapseWhiteSpace = str => str.replace(/\s+/g, ' ').replace(new RegExp(' -র', 'g'), '-র')
+
+// borrowed from https://stackoverflow.com/a/69447629
+const toBn = n => (n + '').replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d])
+
+// borrowed from https://gist.github.com/JamieMason/c1a089f6f1f147dbe9f82cb3e25cd12e
+const toOxfordComma = (array, connector) =>
+	array.length === 2
+		? array.join(` ${connector} `)
+		: array.length > 2
+		? array
+				.slice(0, array.length - 1)
+				.concat(`${connector} ${array.slice(-1)}`)
+				.join(', ')
+		: array.join(', ')
 
 async function randomPhoto(query) {
 	const url = `https://api.unsplash.com/photos/random?query=${query}&client_id=${process.env.UNSPLASH_ACCESS_KEY}`
@@ -70,4 +85,6 @@ export {
 	getRandomQuote,
 	getVideosFromPlaylist,
 	getGIFsFromTenor,
+	toBn,
+	toOxfordComma,
 }
