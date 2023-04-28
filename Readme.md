@@ -28,15 +28,16 @@ GitHub actions use **UTC** time. I live in Dhaka, Bangladesh, and my time zone i
 
 Here are the cron schedules of all workflows:
 
-| Workflow file             | Cron expression | Description                                                       |
-| ------------------------- | --------------- | ----------------------------------------------------------------- |
-| send-quote.yml            | 0 3 \* \* 0     | At 9 AM (Bangladesh Standard Time) on Sunday                      |
-| send-photo.yml            | 0 10 \* \* 2    | At 4 PM (Bangladesh Standard Time) on Tuesday                     |
-| send-cheerful-comment.yml | 0 5 \* \* 3     | At 11 AM (Bangladesh Standard Time) on Wednesday                  |
-| send-reminder.yml         | 0 11 \* \* 4    | At 5 PM (Bangladesh Standard Time) on Thursday                    |
-| send-chore-reminder.yml   | 0 2 \* \* 5     | At 8 AM (Bangladesh Standard Time) on Friday                      |
-| send-video.yml            | 0 15 \* \* 6    | At 9 PM (Bangladesh Standard Time) on Saturday                    |
-| send-birthday-wish.yml    | 0 18 25 10 \*   | At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October |
+| Workflow file              | Cron expression | Description                                                       |
+| -------------------------- | --------------- | ----------------------------------------------------------------- |
+| send-quote.yml             | 0 3 \* \* 0     | At 9 AM (Bangladesh Standard Time) on Sunday                      |
+| send-photo.yml             | 0 10 \* \* 2    | At 4 PM (Bangladesh Standard Time) on Tuesday                     |
+| send-cheerful-comment.yml  | 0 5 \* \* 3     | At 11 AM (Bangladesh Standard Time) on Wednesday                  |
+| send-reminder.yml          | 0 11 \* \* 4    | At 5 PM (Bangladesh Standard Time) on Thursday                    |
+| send-chore-reminder.yml    | 0 2 \* \* 5     | At 8 AM (Bangladesh Standard Time) on Friday                      |
+| send-video.yml             | 0 15 \* \* 6    | At 9 PM (Bangladesh Standard Time) on Saturday                    |
+| send-birthday-wish.yml     | 0 18 25 10 \*   | At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October |
+| send-birthday-reminder.yml | 0 1 \* \* \*    | At 7 AM (Bangladesh Standard Time) every day                      |
 
 If you need help, you can always use [**crontab guru**][10].
 
