@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"test": "node send-reminder.js && node send-quote.js && node send-photo.js && node send-video.js",
-		"test-general": "node send-chore-reminder.js && node send-cheerful-comment.js && node send-birthday-wish.js"
+		"test-general": "node send-chore-reminder.js && node send-cheerful-comment.js && node send-birthday-wish.js && node send-birthday-reminder.js"
 	},
 	"author": "S. Shahriar <shadowshahriar@gmail.com>",
 	"keywords": [
