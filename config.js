@@ -1,4 +1,41 @@
-const greet = ['ভাই', 'দোস্ত', 'শাহ্‌রিয়ার', 'বন্ধু', 'Heyy~', 'আছো?', 'Shahriar', 'Shadow', 'ভাই আছো?']
+const greet = [
+	'ভাই',
+	'শোন',
+	'আচ্ছা',
+	'আচ্ছা শুন',
+	'অ্যাই শুনো',
+	'দোস্ত',
+	'bro',
+	'শাহ্‌রিয়ার',
+	'vai',
+	'dude',
+	'বন্ধু',
+	'Heyy~',
+	'আছো?',
+	'Shahriar',
+	'Shadow',
+	'yaar',
+	'oi',
+	'Oi',
+	'অ্যাই শুন!',
+	'ভাই আছো?',
+]
+
+const numberInBengali = ['শূন্য', 'এক', 'দুই', 'তিন', 'চার', 'পাঁচ', 'ছয়', 'সাত', 'আট', 'নয়']
+const monthInBengali = [
+	'জানুয়ারী',
+	'ফেব্রুয়ারী',
+	'মার্চ',
+	'এপ্রিল',
+	'মে',
+	'জুন',
+	'জুলাই',
+	'অগাস্ট',
+	'সেপ্টেম্বর',
+	'অক্টোবর',
+	'নভেম্বর',
+	'ডিসেম্বর',
+]
 
 const reminderGIFs = [
 	'excited-anime-boy',
@@ -116,4 +153,6 @@ export {
 	chores,
 	birthdayWishes,
 	cheerfulComments,
+	monthInBengali,
+	numberInBengali,
 }
