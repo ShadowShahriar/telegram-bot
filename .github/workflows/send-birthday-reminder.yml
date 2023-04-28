@@ -1,12 +1,11 @@
-name: Test on Push
+name: Send Birthday Reminder
 
 on:
-    push:
-        branches:
-            - main
+    schedule:
+        - cron: '0 1 * * *' # At 7 AM (Bangladesh Standard Time) every day
 
 jobs:
-    test_on_push:
+    send_birthday_reminder:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -16,16 +15,8 @@ jobs:
                   node-version: 17
             - name: npm install
               run: npm ci
-            - name: test everything
-              run: |
-                  node send-reminder.js
-                  node send-quote.js
-                  node send-photo.js
-                  node send-video.js
-                  node send-chore-reminder.js
-                  node send-cheerful-comment.js
-                  node send-birthday-wish.js
-                  node send-birthday-reminder.js
+            - name: send birthday reminder
+              run: node send-birthday-reminder.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}
