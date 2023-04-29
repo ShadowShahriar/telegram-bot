@@ -1,10 +1,21 @@
 import dotenv from 'dotenv'
 import fetch from 'node-fetch'
-import { Telegraf, Input } from 'telegraf'
+import { Telegraf, Input, Markup } from 'telegraf'
 dotenv.config()
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
 const sendMessage = async str => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, collapseWhiteSpace(str))
+const sendMessageWithPhotoLink = async (str, author, url) =>
+	await bot.telegram.sendMessage(
+		process.env.TELEGRAM_USER_ID,
+		str,
+		Markup.inlineKeyboard([
+			[
+				Markup.button.url('Check Profile', `https://unsplash.com/@${author}`),
+				Markup.button.url('See Photo', url),
+			],
+		])
+	)
 const sendVideo = async id => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, `https://youtu.be/${id}`)
 const sendPhoto = async url => await bot.telegram.sendPhoto(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
 const sendGIF = async url => await bot.telegram.sendAnimation(process.env.TELEGRAM_USER_ID, Input.fromURLStream(url))
@@ -76,6 +87,7 @@ async function getRandomQuote() {
 
 export {
 	sendMessage,
+	sendMessageWithPhotoLink,
 	sendRandomMessage,
 	sendPhoto,
 	sendVideo,
