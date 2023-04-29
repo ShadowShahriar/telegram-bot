@@ -36,7 +36,7 @@ Here are the cron schedules of all workflows:
 | send-reminder.yml          | 0 11 \* \* 4    | At 5 PM (Bangladesh Standard Time) on Thursday                    |
 | send-chore-reminder.yml    | 0 2 \* \* 5     | At 8 AM (Bangladesh Standard Time) on Friday                      |
 | send-video.yml             | 0 15 \* \* 6    | At 9 PM (Bangladesh Standard Time) on Saturday                    |
-| send-birthday-wish.yml     | 0 18 25 10 \*   | At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October |
+| send-birthday-wish.yml     | 0 18 24 10 \*   | At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October |
 | send-birthday-reminder.yml | 0 0 \* \* \*    | At 6 AM (Bangladesh Standard Time) every day                      |
 
 If you need help, you can always use [**crontab guru**][10].

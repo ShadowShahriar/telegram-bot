@@ -2,7 +2,7 @@ name: Send Birthday Wish
 
 on:
     schedule:
-        - cron: '0 18 25 10 *' # At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October.
+        - cron: '0 18 24 10 *' # At 12 AM (Bangladesh Standard Time) on day-of-month 25 in October.
 
 jobs:
     send_birthday_wish:
