@@ -2,7 +2,7 @@ name: Send Birthday Reminder
 
 on:
     schedule:
-        - cron: '0 1 * * *' # At 7 AM (Bangladesh Standard Time) every day
+        - cron: '0 0 * * *' # At 6 AM (Bangladesh Standard Time) every day
 
 jobs:
     send_birthday_reminder:
