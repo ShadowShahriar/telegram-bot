@@ -4,6 +4,7 @@ import { Telegraf, Input, Markup } from 'telegraf'
 dotenv.config()
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
+const sendChatAction = async action => await bot.telegram.sendChatAction(process.env.TELEGRAM_USER_ID, action, () => {})
 const sendMessage = async str => await bot.telegram.sendMessage(process.env.TELEGRAM_USER_ID, collapseWhiteSpace(str))
 const sendMessageWithPhotoLink = async (str, author, url) =>
 	await bot.telegram.sendMessage(
@@ -86,6 +87,7 @@ async function getRandomQuote() {
 }
 
 export {
+	sendChatAction,
 	sendMessage,
 	sendMessageWithPhotoLink,
 	sendRandomMessage,
