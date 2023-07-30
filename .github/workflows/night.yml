@@ -1,12 +1,11 @@
-name: Test on Push
+name: Send Night Wish
 
 on:
-    push:
-        branches:
-            - main
+    schedule:
+        - cron: '0 18 * * *' # 12 AM, Daily
 
 jobs:
-    test_on_push:
+    send_video:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
@@ -14,24 +13,10 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: 17
-            - name: npm install
+            - name: NPM Install
               run: npm ci
-            - name: test everything
-              run: |
-                  node src/w-night.js
-                  node src/w-evnt.js
-                  node src/w-moment.js
-                  node src/w-festival.js
-                  node src/w-quote.js
-                  node src/w-video.js
-                  node src/w-photo.js
-                  node src/w-book.js
-                  node src/w-cheerup.js
-                  node src/w-reminder.js
-                  node src/w-chore.js
-                  node src/w-meme.js
-                  node src/w-youtube.js
-                  node src/w-bday.js
+            - name: Send Night Wish
+              run: node src/w-night.js
               env:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}

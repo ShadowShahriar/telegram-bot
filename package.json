@@ -1,12 +1,14 @@
 {
 	"name": "telegram-bot",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A telegram bot that ocassionally sends me songs, messages, and reminders.",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "node send-reminder.js && node send-quote.js && node send-photo.js && node send-video.js",
-		"test-general": "node send-chore-reminder.js && node send-cheerful-comment.js && node send-birthday-wish.js && node send-birthday-reminder.js"
+		"test-daily-scripts": "node src/w-night.js && node src/w-evnt.js && node src/w-moment.js && node src/w-festival.js",
+		"test-weekly-scripts": "node src/w-quote.js && node src/w-video.js && node src/w-photo.js && node src/w-book.js && node src/w-cheerup.js && node src/w-reminder.js && node src/w-chore.js && node src/w-meme.js && node src/w-youtube.js",
+		"test-general-script": "node src/w-bday.js",
+		"test": "npm run test-general-script && npm run test-daily-scripts && npm run test-weekly-scripts"
 	},
 	"author": "S. Shahriar <shadowshahriar@gmail.com>",
 	"keywords": [
@@ -14,21 +16,21 @@
 		"telegraf",
 		"youtube-api",
 		"tenor-api",
+		"pexels-api",
+		"unsplash-api",
+		"firebase-rtdb",
+		"firebase-storage",
+		"imgflip-api",
+		"google-books-api",
 		"telegram-bot",
+		"quotable-api",
 		"github-actions"
 	],
-	"prettier": {
-		"printWidth": 120,
-		"arrowParens": "avoid",
-		"semi": false,
-		"singleQuote": true,
-		"useTabs": true,
-		"tabWidth": 4
-	},
 	"license": "MIT",
 	"dependencies": {
 		"dotenv": "^16.0.3",
 		"node-fetch": "^3.3.1",
+		"pexels": "^1.4.0",
 		"telegraf": "^4.12.2"
 	}
 }

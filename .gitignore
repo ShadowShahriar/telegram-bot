@@ -1,3 +1,6 @@
+src/data/moments
 node_modules
+.draft
+.test
 .trash
 .env

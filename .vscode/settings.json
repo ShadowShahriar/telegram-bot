@@ -1,0 +1,30 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+
+		"node_modules": true,
+		"src/api": true,
+		"src/data": true,
+		"src/data/moments": true,
+		".env": true,
+		".env_sample": true,
+		".prettierrc": true,
+		".gitignore": true,
+
+		".draft": true,
+		"assets": true,
+		"src/config.js": true,
+		"src/festivals.js": true,
+		"src/num2str.js": true,
+		"src/num2str-bn.js": true,
+		"src/utils.js": true,
+
+		"LICENSE": true,
+		"package-lock.json": true
+	}
+}
