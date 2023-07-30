@@ -209,7 +209,7 @@ cartoon, wide-angle half-body professional portrait photo of Danny Phantom, teen
 <!-- links go here -->
 
 [1]: https://github.com/ShadowShahriar/telegram-bot
-[2]: https://github.com/ShadowShahriar/telegram-bot/blob/master/Readme-bn.md
+[2]: https://github.com/ShadowShahriar/telegram-bot/blob/main/Readme-bn.md
 [3]: https://en.wikipedia.org/wiki/Danny_Phantom
 [4]: https://tensor.art/
 [5]: https://tensor.art/images/614973483807605428?post_id=614979166045153015
