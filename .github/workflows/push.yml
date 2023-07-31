@@ -36,7 +36,7 @@ jobs:
                   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
                   YOUTUBE_PLAYLIST_ID: ${{ secrets.YOUTUBE_PLAYLIST_ID }}
                   TENOR_API_KEY: ${{ secrets.TENOR_API_KEY }}
-                  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+                  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_TESTBOT_TOKEN }}
                   TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
                   UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
                   PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
