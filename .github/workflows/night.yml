@@ -5,7 +5,7 @@ on:
         - cron: '0 18 * * *' # 12 AM, Daily
 
 jobs:
-    send_video:
+    send_night_wish:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2

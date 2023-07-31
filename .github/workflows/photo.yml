@@ -5,7 +5,7 @@ on:
         - cron: '0 10 * * 2' # 4 PM, on Tuesdays
 
 jobs:
-    send_video:
+    send_photo:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2

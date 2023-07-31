@@ -5,7 +5,7 @@ on:
         - cron: '0 2 * * 5' # 8 AM, on Fridays
 
 jobs:
-    send_video:
+    send_chore_reminder:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3.5.2
