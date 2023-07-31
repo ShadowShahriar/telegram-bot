@@ -131,22 +131,22 @@ GitHub action-এ **UTC** টাইম ব্যবহার করা হয়।
 
 নিম্নে সবগুলো workflow-র cron schedule আর উদ্দেশ্য তুলে ধরা হলো:
 
-| Workflow file | Time                   | Runs at              | Cron expression | Purpose of this workflow                                   |
-| ------------- | ---------------------- | -------------------- | --------------- | ---------------------------------------------------------- |
-| night.yml     | 00:00 BST<br>18:00 UTC | 12 AM, Daily         | 0 18 \* \* \*   | Help me improve my sleep habit                             |
-| evnt.yml      | 06:00 BST<br>00:00 UTC | 6 AM, Daily          | 0 0 \* \* \*    | Help me remember the special days of people I care         |
-| moment.yml    | 19:00 BST<br>13:00 UTC | 7 PM, Daily          | 0 13 \* \* \*   | Remind me to relive certain moments of my life             |
-| festival.yml  | 07:00 BST<br>01:00 UTC | 7 AM, Daily          | 0 1 \* \* \*    | Remind me to celebrate festivals                           |
-| quote.yml     | 09:00 BST<br>03:00 UTC | 9 AM, on Sundays     | 0 3 \* \* 0     | Help me to be mindful                                      |
-| video.yml     | 15:00 BST<br>09:00 UTC | 3 PM, on Mondays     | 0 9 \* \* 1     | Reduce stress and remind me to take breaks                 |
-| photo.yml     | 16:00 BST<br>10:00 UTC | 4 PM, on Tuesdays    | 0 10 \* \* 2    | Remind me to enjoy the beauty of nature                    |
-| book.yml      | 22:00 BST<br>16:00 UTC | 10 PM, on Tuesdays   | 0 16 \* \* 2    | Help me stick to my reading habit                          |
-| cheerup.yml   | 11:00 BST<br>05:00 UTC | 11 AM, on Wednesdays | 0 5 \* \* 3     | Motivate me when I am feeling down without asking about it |
-| reminder.yml  | 17:00 BST<br>11:00 UTC | 5 PM, on Thursdays   | 0 11 \* \* 4    | Remind me to write stories and draw illustrations          |
-| chore.yml     | 08:00 BST<br>02:00 UTC | 8 AM, on Fridays     | 0 2 \* \* 5     | Remind me to do general chores (E.g. replying to E-mails)  |
-| meme.yml      | 16:00 BST<br>10:00 UTC | 4 PM, on Fridays     | 0 10 \* \* 5    | Remind me to be silly at times                             |
-| youtube.yml   | 21:00 BST<br>15:00 UTC | 9 PM, on Saturdays   | 0 15 \* \* 6    | Remind me about the YouTube videos I used to enjoy         |
-| bday.yml      | 00:00 BST<br>18:00 UTC | 12 AM, on 25 October | 0 18 24 10 \*   | Remind me that I am loved and I matter                     |
+| Workflow file | Time                   | Runs at              | Cron          | Purpose of this workflow                                   |
+| ------------- | ---------------------- | -------------------- | ------------- | ---------------------------------------------------------- |
+| night.yml     | 00:00 BST<br>18:00 UTC | 12 AM, Daily         | 0 18 \* \* \* | Help me improve my sleep habit                             |
+| evnt.yml      | 06:00 BST<br>00:00 UTC | 6 AM, Daily          | 0 0 \* \* \*  | Help me remember the special days of people I care         |
+| moment.yml    | 19:00 BST<br>13:00 UTC | 7 PM, Daily          | 0 13 \* \* \* | Remind me to relive certain moments of my life             |
+| festival.yml  | 07:00 BST<br>01:00 UTC | 7 AM, Daily          | 0 1 \* \* \*  | Remind me to celebrate festivals                           |
+| quote.yml     | 09:00 BST<br>03:00 UTC | 9 AM, on Sundays     | 0 3 \* \* 0   | Help me to be mindful                                      |
+| video.yml     | 15:00 BST<br>09:00 UTC | 3 PM, on Mondays     | 0 9 \* \* 1   | Reduce stress and remind me to take breaks                 |
+| photo.yml     | 16:00 BST<br>10:00 UTC | 4 PM, on Tuesdays    | 0 10 \* \* 2  | Remind me to enjoy the beauty of nature                    |
+| book.yml      | 22:00 BST<br>16:00 UTC | 10 PM, on Tuesdays   | 0 16 \* \* 2  | Help me stick to my reading habit                          |
+| cheerup.yml   | 11:00 BST<br>05:00 UTC | 11 AM, on Wednesdays | 0 5 \* \* 3   | Motivate me when I am feeling down without asking about it |
+| reminder.yml  | 17:00 BST<br>11:00 UTC | 5 PM, on Thursdays   | 0 11 \* \* 4  | Remind me to write stories and draw illustrations          |
+| chore.yml     | 08:00 BST<br>02:00 UTC | 8 AM, on Fridays     | 0 2 \* \* 5   | Remind me to do general chores (E.g. replying to E-mails)  |
+| meme.yml      | 16:00 BST<br>10:00 UTC | 4 PM, on Fridays     | 0 10 \* \* 5  | Remind me to be silly at times                             |
+| youtube.yml   | 21:00 BST<br>15:00 UTC | 9 PM, on Saturdays   | 0 15 \* \* 6  | Remind me about the YouTube videos I used to enjoy         |
+| bday.yml      | 00:00 BST<br>18:00 UTC | 12 AM, on 25 October | 0 18 24 10 \* | Remind me that I am loved and I matter                     |
 
 কোনো হেল্প লাগলে [**crontab guru**][24] তো রয়েছেই!
 
