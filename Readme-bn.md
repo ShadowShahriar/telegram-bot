@@ -67,7 +67,7 @@
     TELEGRAM_USER_ID=...
     ```
 
-4. যেহেতু আমরা অনেকগুলো API নিয়ে কাজ করছি, এমন কিছু API রয়েছে যেগুলো ব্যবহার করার জন্য authentication token or API key লাগবে। এখন এগুলো কীভাবে সংগ্রহ করা সম্ভব তা নিয়ে <a href="#api-key-সম্পর্কিত-নোট"><b>API Key সম্পর্কিত নোট</b></a> নামক সেকশনে বিস্তারিত আলোচনা করা হয়েছে। কোনো কনফিউশন থাকলে [স্যাম্পল `.env` ফাইল][32] দেখে নিতে পারো।
+4. যেহেতু আমরা অনেকগুলো API নিয়ে কাজ করছি, এমন কিছু API রয়েছে যেগুলো ব্যবহার করার জন্য authentication token or API key লাগবে। এখন এগুলো কীভাবে সংগ্রহ করা সম্ভব তা নিয়ে <a href="https://github.com/ShadowShahriar/telegram-bot/blob/main/Readme-bn.md#api-key-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A6%BF%E0%A6%A4-%E0%A6%A8%E0%A7%8B%E0%A6%9F"><b>API Key সম্পর্কিত নোট</b></a> নামক সেকশনে বিস্তারিত আলোচনা করা হয়েছে। কোনো কনফিউশন থাকলে [স্যাম্পল `.env` ফাইল][32] দেখে নিতে পারো।
 
     ```yaml
     YOUTUBE_API_KEY=...
@@ -196,7 +196,7 @@ cartoon, wide-angle half-body professional portrait photo of Danny Phantom, teen
 
 -   সম্পূর্ণ codebase পুনলিখন।
 -   ৬টি নতুন worker script সংযোজন।
--   উপযুক্ত মেসেজের রিপ্লাই সংযোজন।
+-   মেসেজের উপযুক্ত রিপ্লাই সংযোজন।
 -   Worker script-গুলোর আগে `w-` দ্বারা চিহ্নিতকরণ আর সেগুলোকে `src` ফোল্ডারে স্থানান্তর।
 -   বোটের আচরণ নিয়ন্ত্রণ করার জন্য `src/config.js` নামক কনফিগারেশন ফাইল তৈরি।
 -   `src/data` ফোল্ডারে ব্যবহারকারীর ডেটা সংরক্ষণ।
