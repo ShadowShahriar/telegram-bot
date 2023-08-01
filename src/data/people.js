@@ -37,7 +37,7 @@ const people = [
 		fullName: ['Anisha Roy', 'অনিশা রয়'],
 		nickName: ['Anisha', 'অনিশা'],
 		birthday: '31-Jan-2003',
-		fndsince: '08-Aug-2022',
+		fndsince: '09-Aug-2022',
 		eventday: false,
 		eventype: ['', ''],
 		eventwas: false,
