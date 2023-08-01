@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 import { script } from './config.js'
 import { getWeekdays, random } from './utils.js'
 import { sendPhoto, sendMessage } from './api/telegram.js'
@@ -14,10 +17,13 @@ async function main() {
 
 	const secondSunday = getWeekdays('Sun')[1]
 	const thirdTuesday = getWeekdays('Tue')[2]
-	if (!isToday(secondSunday) || !isToday(thirdTuesday)) {
-		console.log('Aborted')
-		console.timeEnd()
-		return
+	if (process.env.TESTING_ON_PUSH) {
+	} else {
+		if (!isToday(secondSunday) || !isToday(thirdTuesday)) {
+			console.log('Aborted')
+			console.timeEnd()
+			return
+		}
 	}
 
 	const { directory, fileMax, fileExt, recordMax, recordName } = script.moment
