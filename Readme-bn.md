@@ -131,22 +131,22 @@ GitHub action-এ **UTC** টাইম ব্যবহার করা হয়।
 
 নিম্নে সবগুলো workflow-র cron schedule আর উদ্দেশ্য তুলে ধরা হলো:
 
-| Workflow file | Time                   | Runs at              | Cron          | Purpose of this workflow                                   |
-| ------------- | ---------------------- | -------------------- | ------------- | ---------------------------------------------------------- |
-| night.yml     | 00:00 BST<br>18:00 UTC | 12 AM, Daily         | 0 18 \* \* \* | Help me improve my sleep habit                             |
-| evnt.yml      | 06:00 BST<br>00:00 UTC | 6 AM, Daily          | 0 0 \* \* \*  | Help me remember the special days of people I care         |
-| moment.yml    | 19:00 BST<br>13:00 UTC | 7 PM, Daily          | 0 13 \* \* \* | Remind me to relive certain moments of my life             |
-| festival.yml  | 07:00 BST<br>01:00 UTC | 7 AM, Daily          | 0 1 \* \* \*  | Remind me to celebrate festivals                           |
-| quote.yml     | 09:00 BST<br>03:00 UTC | 9 AM, on Sundays     | 0 3 \* \* 0   | Help me to be mindful                                      |
-| video.yml     | 15:00 BST<br>09:00 UTC | 3 PM, on Mondays     | 0 9 \* \* 1   | Reduce stress and remind me to take breaks                 |
-| photo.yml     | 16:00 BST<br>10:00 UTC | 4 PM, on Tuesdays    | 0 10 \* \* 2  | Remind me to enjoy the beauty of nature                    |
-| book.yml      | 22:00 BST<br>16:00 UTC | 10 PM, on Tuesdays   | 0 16 \* \* 2  | Help me stick to my reading habit                          |
-| cheerup.yml   | 11:00 BST<br>05:00 UTC | 11 AM, on Wednesdays | 0 5 \* \* 3   | Motivate me when I am feeling down without asking about it |
-| reminder.yml  | 17:00 BST<br>11:00 UTC | 5 PM, on Thursdays   | 0 11 \* \* 4  | Remind me to write stories and draw illustrations          |
-| chore.yml     | 08:00 BST<br>02:00 UTC | 8 AM, on Fridays     | 0 2 \* \* 5   | Remind me to do general chores (E.g. replying to E-mails)  |
-| meme.yml      | 16:00 BST<br>10:00 UTC | 4 PM, on Fridays     | 0 10 \* \* 5  | Remind me to be silly at times                             |
-| youtube.yml   | 21:00 BST<br>15:00 UTC | 9 PM, on Saturdays   | 0 15 \* \* 6  | Remind me about the YouTube videos I used to enjoy         |
-| bday.yml      | 00:00 BST<br>18:00 UTC | 12 AM, on 25 October | 0 18 24 10 \* | Remind me that I am loved and I matter                     |
+| Workflow&nbsp;file | Time                             | Runs at                          | Cron&nbsp;expression | Purpose of this workflow                                   |
+| ------------------ | -------------------------------- | -------------------------------- | -------------------- | ---------------------------------------------------------- |
+| night.yml          | 00:00&nbsp;BST<br>18:00&nbsp;UTC | 12&nbsp;AM<br>Daily              | 0 18 \* \* \*        | Help me improve my sleep habit                             |
+| evnt.yml           | 06:00&nbsp;BST<br>00:00&nbsp;UTC | 6&nbsp;AM<br>Daily               | 0 0 \* \* \*         | Help me remember the special days of people I care         |
+| moment.yml         | 19:00&nbsp;BST<br>13:00&nbsp;UTC | 7&nbsp;PM<br>Daily               | 0 13 \* \* \*        | Remind me to relive certain moments of my life             |
+| festival.yml       | 07:00&nbsp;BST<br>01:00&nbsp;UTC | 7&nbsp;AM<br>Daily               | 0 1 \* \* \*         | Remind me to celebrate festivals                           |
+| quote.yml          | 09:00&nbsp;BST<br>03:00&nbsp;UTC | 9&nbsp;AM<br>on Sundays          | 0 3 \* \* 0          | Help me to be mindful                                      |
+| video.yml          | 15:00&nbsp;BST<br>09:00&nbsp;UTC | 3&nbsp;PM<br>on Mondays          | 0 9 \* \* 1          | Reduce stress and remind me to take breaks                 |
+| photo.yml          | 16:00&nbsp;BST<br>10:00&nbsp;UTC | 4&nbsp;PM<br>on Tuesdays         | 0 10 \* \* 2         | Remind me to enjoy the beauty of nature                    |
+| book.yml           | 22:00&nbsp;BST<br>16:00&nbsp;UTC | 10&nbsp;PM<br>on Tuesdays        | 0 16 \* \* 2         | Help me stick to my reading habit                          |
+| cheerup.yml        | 11:00&nbsp;BST<br>05:00&nbsp;UTC | 11&nbsp;AM<br>on&nbsp;Wednesdays | 0 5 \* \* 3          | Motivate me when I am feeling down without asking about it |
+| reminder.yml       | 17:00&nbsp;BST<br>11:00&nbsp;UTC | 5&nbsp;PM<br>on Thursdays        | 0 11 \* \* 4         | Remind me to write stories and draw illustrations          |
+| chore.yml          | 08:00&nbsp;BST<br>02:00&nbsp;UTC | 8&nbsp;AM<br>on Fridays          | 0 2 \* \* 5          | Remind me to do general chores (E.g. replying to E-mails)  |
+| meme.yml           | 16:00&nbsp;BST<br>10:00&nbsp;UTC | 4&nbsp;PM<br>on Fridays          | 0 10 \* \* 5         | Remind me to be silly at times                             |
+| youtube.yml        | 21:00&nbsp;BST<br>15:00&nbsp;UTC | 9&nbsp;PM<br>on Saturdays        | 0 15 \* \* 6         | Remind me about the YouTube videos I used to enjoy         |
+| bday.yml           | 00:00&nbsp;BST<br>18:00&nbsp;UTC | 12&nbsp;AM<br>on 25 Oct          | 0 18 24 10 \*        | Remind me that I am loved and I matter                     |
 
 কোনো হেল্প লাগলে [**crontab guru**][24] তো রয়েছেই!
 
@@ -192,7 +192,7 @@ cartoon, wide-angle half-body professional portrait photo of Danny Phantom, teen
 
 এক্সপেরিমেন্ট হিসেবে শুরু করা প্রোজেক্টটি যে আমার জীবনের একটা গুরুত্বপূর্ণ অংশে পরিণত হবে তা আগে থেকে বুঝে উঠতে পারিনি। এই প্রোজেক্টের উপর কাজ করার সময় আমি যেমনটা কল্পনা করেছিলাম ঠিক সেরকমটাই করে দেখাতে পেরেছি। আমি চেয়েছিলাম এমন একটা বোট তৈরি করতে যেটা আমার ফ্রেন্ডের মতো আচরণ করবে, আমাকে আমার দুর্বলতা কাটিয়ে উঠতে সাহায্য করবে। যখনই আমার মন খারাপ হয়, তখন এই বোট আমাকে উৎসাহিত করার জন্য কিছু না কিছু পাঠায়- আমার ভালো লাগে। আসলে আমি এই প্রোজেক্টের মাধ্যমে self-journaling করার চেষ্টায় আছি, ভবিষ্যতের শাহ্‌রিয়ারের জন্য বর্তমানের কিছু মেসেজ রেখে যাচ্ছি।
 
-### v2.0.0
+### v2.0.0 (31 Jul 2023)
 
 -   সম্পূর্ণ codebase পুনলিখন।
 -   ৬টি নতুন worker script সংযোজন।
@@ -202,7 +202,7 @@ cartoon, wide-angle half-body professional portrait photo of Danny Phantom, teen
 -   `src/data` ফোল্ডারে ব্যবহারকারীর ডেটা সংরক্ষণ।
 -   দুইটি ভাষায় Readme ফাইল লিখন।
 
-### v1.0.0
+### v1.0.0 (30 Apr 2023)
 
 -   এক্সপেরিমেন্টাল রিলিজ
 
