@@ -8,7 +8,7 @@ jobs:
     send_youtube_video:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3.5.2
+            - uses: actions/checkout@v3.5.3
             - name: setup node
               uses: actions/setup-node@v2
               with:
