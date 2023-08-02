@@ -408,7 +408,7 @@ const people = [
 		eventype: ['', ''],
 		eventwas: false,
 		role: ['Picchi', 'পিচ্চি'],
-		prefix: false
+		prefix: true
 	},
 	{
 		fullName: ['Sabbir', 'সাব্বির'],
