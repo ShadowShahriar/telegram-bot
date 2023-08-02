@@ -1,6 +1,6 @@
 # telegram-bot
 
-<p align="center"><img src="./assets/botdesc-2x.png" width="100%" alt="<!-- Banner should go here -->"/></p>
+<p align="center"><img src="./assets/botdesc-2x.jpg" width="100%" alt="<!-- Banner should go here -->"/></p>
 
 ## Overview
 
