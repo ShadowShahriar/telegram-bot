@@ -154,15 +154,15 @@ If you need help, you can always use [**crontab guru**][24].
 
 My project is licensed under the [**MIT License**][6]. But I couldn't have created it without the incredible open-source code provided by the following individuals. Their code is licensed under [**CC BY-SA 4.0**][7].
 
-| Util function                         | Author                    | Source               |
-| ------------------------------------- | ------------------------- | -------------------- |
-| `toBn(num)`                           | [**Mohsen Alyafei**][15]  | [Stack Overflow][8]  |
-| `shuffleArray(array)`                 | [**Laurens Holst**][16]   | [Stack Overflow][9]  |
-| `toList(arr, oxford, connector)`      | [**Jamie Mason**][17]     | [GitHub Gist][10]    |
-| `toTitleCase(str)`                    | [**dipole_moment**][18]   | [Stack Overflow][11] |
-| `toNameCase(str)`                     | [**Tom Kay**][19]         | [Stack Overflow][12] |
-| `fetchWithTimeout(resource, options)` | [**Dmitri Pavlutin**][20] | [Blog Post][13]      |
-| `getWeekdays(target)`                 | [**jabclab**][21]         | [Stack Overflow][14] |
+| Util function                         | Author                         | Source                    |
+| ------------------------------------- | ------------------------------ | ------------------------- |
+| `toBn(num)`                           | [**Mohsen&nbsp;Alyafei**][15]  | [Stack&nbsp;Overflow][8]  |
+| `shuffleArray(array)`                 | [**Laurens&nbsp;Holst**][16]   | [Stack&nbsp;Overflow][9]  |
+| `toList(arr, oxford, connector)`      | [**Jamie&nbsp;Mason**][17]     | [GitHub&nbsp;Gist][10]    |
+| `toTitleCase(str)`                    | [**dipole_moment**][18]        | [Stack&nbsp;Overflow][11] |
+| `toNameCase(str)`                     | [**Tom&nbsp;Kay**][19]         | [Stack&nbsp;Overflow][12] |
+| `fetchWithTimeout(resource, options)` | [**Dmitri&nbsp;Pavlutin**][20] | [Blog&nbsp;Post][13]      |
+| `getWeekdays(target)`                 | [**jabclab**][21]              | [Stack&nbsp;Overflow][14] |
 
 ## Artwork
 
