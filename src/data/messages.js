@@ -383,7 +383,12 @@ const aboutFestivals = {
 	diwali: [['Happy Diwali! ✨']],
 	halloween: [['Happy Halloween! 😁']],
 	christmas: [['Merry Christmas 🎄'], ['বড়দিনের শুভেচ্ছা 🎄']],
-	newyear: [[`Happy New Year ${new Date().getFullYear() + 1}! 🎉`]]
+	newyear: [[`Happy New Year ${new Date().getFullYear() + 1}! 🎉`]],
+	friendship: [
+		['Happy Friendship Day! 🌻'],
+		['ভাই, তোমাকে বন্ধু দিবসের অনেক অনেক শুভেচ্ছা! 😊'],
+		['বন্ধু দিবসের অনেক অনেক শুভেচ্ছা! 😊']
+	]
 }
 
 const aboutMore = [

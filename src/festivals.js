@@ -1,3 +1,5 @@
+import { getWeekdays } from './utils.js'
+
 /**
  * Get today's date with UTC offset.
  */
@@ -96,4 +98,24 @@ function isNewYear() {
 	return isDateMonth(1, 1)
 }
 
-export { isEidalFitr, isEidalAdha, isDiwali, isChristmas, isHalloween, isNewYear }
+function isFriendshipDay() {
+	const today = getToday()
+	const currentDate = today.getDate()
+	const currentMonth = today.getMonth()
+
+	// In Bangladesh, Friendship Day is observed
+	// on the first Sunday of August every year
+	const firstSunday = getWeekdays('Sun')[0]
+	const targetDate = firstSunday.getDate()
+	const targetMonth = 7
+
+	if (currentMonth === targetMonth) {
+		if (currentDate === targetDate) {
+			return true
+		}
+	}
+
+	return false
+}
+
+export { isEidalFitr, isEidalAdha, isDiwali, isChristmas, isHalloween, isNewYear, isFriendshipDay }
