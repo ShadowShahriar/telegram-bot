@@ -432,7 +432,7 @@ const aboutDate = {
 			],
 			[
 				[
-					[`আজকে ${q1}`, `তোমার ${lWS} বার্থডে!`],
+					[`আজকে ${q1}`, `তোমার ${lWP} বার্থডে!`],
 					[`আজকে ${q2}`, `${lWP} জন্মদিন!`],
 					[`আজকে তোমার ${lWP} ${Y}তম জন্মদিন!`],
 					[`আজকে তোমার ${lWP} জন্মদিন!`],
@@ -463,7 +463,7 @@ const aboutDate = {
 		tomorrow: ({ l, lWP, lWS, P_BN, P, q1, q4, Pz }) => [
 			[
 				[
-					[`Kalke ${q4}`, `${lWP} birthday`],
+					[`Kalke ${q4}`, `Tomar ${lWP} birthday`],
 					[`Tomorrow is your ${lWS} birthday`],
 					[`Did you forget that tomorrow is your ${lWS} birthday`],
 					[`Tomorrow is the day! (your ${lWP} birthday)`],
@@ -482,7 +482,7 @@ const aboutDate = {
 					[`কালকে ${q4}`, `তোমার ${lWP} জন্মদিন!`],
 					[`কালকে কিন্তু ${q1}`, `তোমার ${lWP} বার্থডে!`],
 					[`মনে আছে তো কালকে ${q4}?`, `আরেহ! কালকে তোমার ${lWP} জন্মদিন!`],
-					[`কালকের দিনটা কিন্তু ${lWP} জন্য খুব special`, `কেনো? আরেহ! কারণ কালকে ${Pz} জন্মদিন!`],
+					[`কালকের দিনটা কিন্তু তোমার ${lWP} জন্য খুব special`, `কেনো? আরেহ! কারণ কালকে ${Pz} জন্মদিন!`],
 					[`ভুলে যেও না কালকে কিন্তু তোমার ${lWP} জন্মদিন!`]
 				],
 				[
