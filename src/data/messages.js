@@ -465,7 +465,7 @@ const aboutDate = {
 				[
 					[`Kalke ${q4}`, `Tomar ${lWP} birthday`],
 					[`Tomorrow is your ${lWS} birthday`],
-					[`Did you forget that tomorrow is your ${lWS} birthday`],
+					[`Did you forget that tomorrow is your ${lWS} birthday?`],
 					[`Tomorrow is the day! (your ${lWP} birthday)`],
 					[`We don't have much time`, `Tomorrow is their birthday!`]
 				],
