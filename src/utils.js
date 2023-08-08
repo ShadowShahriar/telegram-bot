@@ -84,6 +84,9 @@ const getParticle = (word, multi, loc) => {
 			particle = loc ? 'তে' : 'র'
 		} else {
 			particle = loc ? 'ে' : 'ের'
+			if (char === 'ই' || char === 'ঈ') {
+				particle = loc ? 'য়ে' : 'য়ের'
+			}
 		}
 		if (multi) {
 			particle = 'দের'
