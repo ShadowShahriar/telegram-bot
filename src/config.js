@@ -9,7 +9,22 @@ const script = {
 	},
 	night: {
 		recordName: 'lastStyle',
-		exclude: ['27-May', '28-May', '24-Oct', '25-Oct', '26-Oct']
+		exclude: ['27-May', '28-May', '24-Oct', '25-Oct', '26-Oct'],
+		exams: [
+			'17-Aug',
+			'20-Aug',
+			'22-Aug',
+			'24-Aug',
+			'27-Aug',
+			'29-Aug',
+			'31-Aug',
+			'5-Sep',
+			'7-Sep',
+			'12-Sep',
+			'14-Sep',
+			'19-Sep',
+			'21-Sep'
+		]
 	},
 	cheerup: {
 		recordName: 'lastComment',

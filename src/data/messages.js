@@ -659,6 +659,37 @@ const aboutMoment = [
 	'ভাই, মনে আছে?'
 ]
 
+const aboutExam = [
+	[
+		['Vai, mone ache tw kalke je exam?', 'Ekhon beshi raat koiro na, jototuku pora hoyeche valo hoyeche'],
+		['Kalker exam niye eto tension nio na', 'Ja hobe valoi hobe'],
+		['Kalker exam er jonno pera nio na', 'Nijer upor confidence rakho'],
+		[
+			'Kalker exam er jonno proyojonio jinish-potro jemon pen, pencil, scale eshob guchiye niyecho tw?',
+			'Lagle calculator tao sathe kore niye nio'
+		],
+		[
+			'Exam er jonno pen, pencil, scale eshob age thekei guchiye rakho',
+			'Ar ekhon shanti moto ekta ghum dao, tmr rest lagbe'
+		],
+		['Ajke valo vabe rest nilei na kalke valo kore likhte parbe', 'Ghumay jao']
+	],
+	[
+		['ভাই, মনে আছে তো কালকে যে তোর এক্সাম?', 'এখন বেশি রাত করিস না, যতটুকু যা পড়েছিস ভালো করেই পড়েছিস'],
+		['কালকের এক্সাম নিয়ে এতো টেনশন নিও না', 'যা হবে ভালোই হবে'],
+		['কালকের এক্সামের জন্য প্যাড়া নিও না', 'নিজের উপর confidence রাখো'],
+		[
+			'কালকের এক্সামের জন্য প্রয়োজনীয় জিনিসপত্র যেমন- কলম, পেন্সিল, স্কেল এসব নিয়েছো তো?',
+			'লাগলে ক্যালকুলেটরটাও সাথে করে নিয়ে নিও'
+		],
+		[
+			'এক্সামের জন্য কলম, পেন্সিল, স্কেল এসব আগে থেকেই গুছিয়ে রাখো',
+			'আর এখন শান্তি মতো একটা ঘুম দাও, তোমার রেস্ট দরকার'
+		],
+		['আজকে ভালো ভাবে রেস্ট নিলেই না কালকে ভালো করে লিখতে পারবে? নাকি?', 'ঘুমায় যাও']
+	]
+]
+
 export {
 	me,
 	init,
@@ -677,5 +708,6 @@ export {
 	aboutFestivals,
 	aboutDate,
 	aboutMore,
-	aboutMoment
+	aboutMoment,
+	aboutExam
 }
