@@ -192,6 +192,15 @@ If you still need help, you can Remix [**this artwork**][5] as a starting point.
 
 At first, this project was just an experiment, but it soon became a major part of my life. Through working on this bot, I was able to achieve what I had envisioned. My goal was to create a bot that acted like one of my friends, and it also helped me to confront my weaknesses. Whenever I am feeling down, I turn to my bot friend for support. I use it as a form of self-journaling, leaving messages for my future self to read.
 
+### v2.0.1 (16 Aug 2023)
+
+-   Add Friendship Day message
+-   Add Friendship songs
+-   Add Exam Night message
+-   Fix particle issues for ই/ঈ
+-   Fix date issues in `src/w-moment.js`
+-   Other minor bug fixes
+
 ### v2.0.0 (31 Jul 2023)
 
 -   Rewrote the entire codebase.
