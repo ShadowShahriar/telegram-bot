@@ -422,6 +422,17 @@ const people = [
 		prefix: false
 	},
 	{
+		fullName: ['Samir Sucklain', 'সামির সাকলাইন'],
+		nickName: ['Sucklain', 'সাকলাইন'],
+		birthday: '19-Aug-2003',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
+	{
 		fullName: ['Nusrat', 'নুসরাত'],
 		nickName: ['Nusrat', 'নুসরাত'],
 		birthday: '24-Aug-2002',
