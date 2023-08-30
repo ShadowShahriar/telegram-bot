@@ -457,6 +457,17 @@ const people = [
 		prefix: false
 	},
 	{
+		fullName: ['Sanskriti', 'টুইটারের সংস্কৃতি'],
+		nickName: ['Sanskriti', 'সংস্কৃতি'],
+		birthday: '05-Sep-2002',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['Apu', 'আপু'],
+		prefix: false
+	},
+	{
 		fullName: ['Synthia', 'সিনথিয়া'],
 		nickName: ['Synthia', 'সিনথিয়া'],
 		birthday: '08-Sep-2004',
