@@ -216,6 +216,17 @@ const people = [
 		prefix: false
 	},
 	{
+		fullName: ['Tushar Kandpal', 'টুইটারের তুষার'],
+		nickName: ['Tushar', 'তুষার'],
+		birthday: '24-Apr-2002',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['Vai', 'ভাই'],
+		prefix: false
+	},
+	{
 		fullName: ['Tutul', 'তুতুল'],
 		nickName: ['Tutul', 'তুতুল'],
 		birthday: '27-Apr-1993',
