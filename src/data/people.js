@@ -523,6 +523,28 @@ const people = [
 		prefix: false
 	},
 	{
+		fullName: ['Maisha', 'মাইশা'],
+		nickName: ['Maisha', 'মাইশা'],
+		birthday: '12-Sep-2004',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
+	{
+		fullName: ['Mir Mahadin', 'মীর মাহাদিন'],
+		nickName: ['Mir Mahadin', 'মীর মাহাদিন'],
+		birthday: '12-Sep-2003',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
+	{
 		fullName: ['Arpan', 'অর্পণ'],
 		nickName: ['Arpan', 'অর্পণ'],
 		birthday: '14-Sep-2003',
@@ -531,17 +553,6 @@ const people = [
 		eventype: ['', ''],
 		eventwas: false,
 		role: ['dada', 'দাদা'],
-		prefix: false
-	},
-	{
-		fullName: ['Maisha', 'মাইশা'],
-		nickName: ['Maisha', 'মাইশা'],
-		birthday: '15-Sep-2004',
-		fndsince: false,
-		eventday: false,
-		eventype: ['', ''],
-		eventwas: false,
-		role: ['', ''],
 		prefix: false
 	},
 	{
