@@ -23,6 +23,17 @@ const people = [
 		prefix: true
 	},
 	{
+		fullName: ['Rahat Rahman', 'ইঞ্জিনিয়ারিংয়ের রাহাত'],
+		nickName: ['Rahat', 'রাহাত'],
+		birthday: '20-Jan-2003',
+		fndsince: '17-Aug-2023',
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['Vai', 'ভাই'],
+		prefix: false
+	},
+	{
 		fullName: ['Talha Jubayer', 'তালহা জোবায়ের'],
 		nickName: ['Talha', 'তালহা'],
 		birthday: '27-Jan-2003',
@@ -103,6 +114,17 @@ const people = [
 	},
 
 	// === March ===
+	{
+		fullName: ['Rakib babaji', 'রাকিব বাবাজি'],
+		nickName: ['Rabib', 'রাকিব'],
+		birthday: '04-Mar-2001',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
 	{
 		fullName: ['Portious', 'Portious'],
 		nickName: ['Portious', 'Portious'],
@@ -553,6 +575,17 @@ const people = [
 		eventype: ['', ''],
 		eventwas: false,
 		role: ['dada', 'দাদা'],
+		prefix: false
+	},
+	{
+		fullName: ['Nazmul Hasan Sagor', 'নাজমুল হাসান সাগর'],
+		nickName: ['Sagor', 'সাগর'],
+		birthday: '14-Sep-2003',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['bhai', 'ভাই'],
 		prefix: false
 	},
 	{
