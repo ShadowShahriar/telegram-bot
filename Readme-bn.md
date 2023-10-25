@@ -133,7 +133,7 @@ GitHub action-এ **UTC** টাইম ব্যবহার করা হয়।
 
 | Workflow&nbsp;file | Time                             | Runs at                          | Cron&nbsp;expression | Purpose of this workflow                                   |
 | ------------------ | -------------------------------- | -------------------------------- | -------------------- | ---------------------------------------------------------- |
-| night.yml          | 00:00&nbsp;BST<br>18:00&nbsp;UTC | 12&nbsp;AM<br>Daily              | 0 18 \* \* \*        | Help me improve my sleep habit                             |
+| night.yml          | 00:50&nbsp;BST<br>18:00&nbsp;UTC | 12:50&nbsp;AM<br>Daily           | 50 18 \* \* \*       | Help me improve my sleep habit                             |
 | evnt.yml           | 06:00&nbsp;BST<br>00:00&nbsp;UTC | 6&nbsp;AM<br>Daily               | 0 0 \* \* \*         | Help me remember the special days of people I care         |
 | moment.yml         | 19:00&nbsp;BST<br>13:00&nbsp;UTC | 7&nbsp;PM<br>Daily               | 0 13 \* \* \*        | Remind me to relive certain moments of my life             |
 | festival.yml       | 07:00&nbsp;BST<br>01:00&nbsp;UTC | 7&nbsp;AM<br>Daily               | 0 1 \* \* \*         | Remind me to celebrate festivals                           |
@@ -146,7 +146,7 @@ GitHub action-এ **UTC** টাইম ব্যবহার করা হয়।
 | chore.yml          | 08:00&nbsp;BST<br>02:00&nbsp;UTC | 8&nbsp;AM<br>on Fridays          | 0 2 \* \* 5          | Remind me to do general chores (E.g. replying to E-mails)  |
 | meme.yml           | 16:00&nbsp;BST<br>10:00&nbsp;UTC | 4&nbsp;PM<br>on Fridays          | 0 10 \* \* 5         | Remind me to be silly at times                             |
 | youtube.yml        | 21:00&nbsp;BST<br>15:00&nbsp;UTC | 9&nbsp;PM<br>on Saturdays        | 0 15 \* \* 6         | Remind me about the YouTube videos I used to enjoy         |
-| bday.yml           | 00:00&nbsp;BST<br>18:00&nbsp;UTC | 12&nbsp;AM<br>on 25 Oct          | 0 18 24 10 \*        | Remind me that I am loved and I matter                     |
+| bday.yml           | 23:50&nbsp;BST<br>17:50&nbsp;UTC | ~12&nbsp;AM<br>on 25 Oct         | 50 17 24 10 \*       | Remind me that I am loved and I matter                     |
 
 কোনো হেল্প লাগলে [**crontab guru**][24] তো রয়েছেই!
 
