@@ -2,7 +2,7 @@ name: Send Night Wish
 
 on:
     schedule:
-        - cron: '0 18 * * *' # 12 AM, Daily
+        - cron: '50 18 * * *' # 12:50 AM, Daily
 
 jobs:
     send_night_wish:

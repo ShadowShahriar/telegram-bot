@@ -2,7 +2,7 @@ name: Send Birthday Wish
 
 on:
     schedule:
-        - cron: '0 18 24 10 *' # 12 AM, on 25 October
+        - cron: '50 17 24 10 *' # 11:50 PM, on 24 October ~ 12 AM, on 25 October
 
 jobs:
     send_bday_wish:
