@@ -8,9 +8,9 @@ jobs:
     send_book:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4.0.0
+            - uses: actions/checkout@v4.1.1
             - name: setup node
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v4
               with:
                   node-version: 18
             - name: NPM Install
