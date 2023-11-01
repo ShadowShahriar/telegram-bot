@@ -613,6 +613,28 @@ const people = [
 
 	// === October ===
 	{
+		fullName: ['Nusrat Khan', 'কলেজের নুসরাত'],
+		nickName: ['Nusrat', 'নুসরাত'],
+		birthday: '06-Oct-2003',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
+	{
+		fullName: ['Arsene Awounou', 'টুইটারের Arsene'],
+		nickName: ['Arsene', 'Arsene'],
+		birthday: '07-Oct-1999',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
+		prefix: false
+	},
+	{
 		fullName: ['Krish', 'কৃষ'],
 		nickName: ['Krish', 'কৃষ'],
 		birthday: '09-Oct-2000',
@@ -621,6 +643,28 @@ const people = [
 		eventype: ['', ''],
 		eventwas: false,
 		role: ['Vaiya', 'ভাইয়া'],
+		prefix: false
+	},
+	{
+		fullName: ['Krishna Gupta', 'টুইটার থেকে কৃষ্ণা'],
+		nickName: ['Krishna', 'কৃষ্ণা'],
+		birthday: '15-Oct-2005',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['Vai', 'ভাই'],
+		prefix: false
+	},
+	{
+		fullName: ["Sanskriti's younger sister Agrima", 'সংস্কৃতি আপুর ছোটবোন অগ্রিমা'],
+		nickName: ['Agrima Gupta', 'অগ্রিমা'],
+		birthday: '21-Oct-2008',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['', ''],
 		prefix: false
 	},
 	{
