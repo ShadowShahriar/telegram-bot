@@ -23,6 +23,17 @@ const people = [
 		prefix: true
 	},
 	{
+		fullName: ['Srushti', 'সৃষ্টি'],
+		nickName: ['Srushti', 'সৃষ্টি'],
+		birthday: '05-Jan-2004',
+		fndsince: false,
+		eventday: false,
+		eventype: ['', ''],
+		eventwas: false,
+		role: ['Twitter friend', 'টুইটারের ফ্রেন্ড'],
+		prefix: true
+	},
+	{
 		fullName: ['Rahat Rahman', 'ইঞ্জিনিয়ারিংয়ের রাহাত'],
 		nickName: ['Rahat', 'রাহাত'],
 		birthday: '20-Jan-2003',
@@ -779,17 +790,6 @@ const people = [
 		eventype: ['', ''],
 		eventwas: false,
 		role: ['Mama', 'মামা'],
-		prefix: false
-	},
-	{
-		fullName: ['Srushti', 'সৃষ্টি'],
-		nickName: ['Srushti', 'সৃষ্টি'],
-		birthday: '05-Dec-2004',
-		fndsince: false,
-		eventday: false,
-		eventype: ['', ''],
-		eventwas: false,
-		role: ['Twitter friend', 'টুইটারের ফ্রেন্ড'],
 		prefix: false
 	},
 	{
