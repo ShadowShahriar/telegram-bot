@@ -12,7 +12,7 @@ jobs:
     test_on_push:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4.2.1
+            - uses: actions/checkout@v4.2.2
             - name: setup node
               uses: actions/setup-node@v4
               with:
