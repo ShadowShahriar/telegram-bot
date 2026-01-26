@@ -8,7 +8,7 @@ jobs:
     send_video:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v6.0.1
+            - uses: actions/checkout@v6.0.2
             - name: setup node
               uses: actions/setup-node@v6
               with:
